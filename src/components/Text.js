@@ -6,13 +6,11 @@ const sizes = {
     lg: '24px'
 }
 
-const Text = styled.p(({ theme, color, size = 'core' }) => ({
+const Text = styled.p(({ theme, color, size = 'core', ...styles }) => ({
     color: theme.colors[color] || theme.colors.text,
-    fontSize: sizes[size],
-    _hover: {
-        color: 'yellow',
-        cursor: 'pointer'
-    }
+    fontSize: sizes.core,
+    marginBlock: 0,
+    ...styles
 }));
 
 export default Text;

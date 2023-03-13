@@ -1,4 +1,4 @@
-root {
+:root {
     --font-size: 20px;
     --line-height: 1.2;
     --padding: 24px;
@@ -37,6 +37,15 @@ root {
     --color-warm-light: #f3e1c0;
     --color-storm: #5d8bb8;
     --color-white: #fff;
-    --color-text: var(--color-grey-70);
+    --color-text: #0b2471;
     --border-dashed-cobalt: 1px dashed rgba(13,89,242,.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    color: var(--color-text);
 }

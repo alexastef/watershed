@@ -11,7 +11,9 @@ const Button = styled.button(
        height: '40px',
        border: 'none',
        fontWeight: 600,
-       color: 'white'
+       color: 'white',
+       padding: '11px 14px',
+       fontSize: '17px'
     },
     ({ theme, size }) => css`
       background-color: ${theme.colors.cobaltCore};

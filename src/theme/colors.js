@@ -33,7 +33,11 @@ const colors = {
     sun: '#e77054',
     warmLight: '#f3e1c0',
     storm: '#5d8bb8',
-    white: '#fff'
+    white: '#fff',
+    header: '#265cff',
+    body: '#0b2471',
+    border: '#657eff',
+    background: '#fffbf3'
 }
 
 export default colors;
