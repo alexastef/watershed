@@ -38,6 +38,12 @@ const blockText = [
     }
 ]
 
+const SectionFlex = styled(Flex)`
+  @media screen and (max-width: 520px) {
+    flex-direction: column;
+  }
+`
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -45,15 +51,7 @@ function App() {
         <Text textAlign="center">Watershed Technical Screen</Text>
           <StyledSection>
               <Heading marginBottom="1rem">The Watershed difference</Heading>
-              <Flex
-                  justifyContent="space-between"
-                  css={css`
-                    flex-direction: row;
-                    @media screen and (max-width: 520px) {
-                      flex-direction: column;
-                    }
-                  `}
-              >
+              <SectionFlex justifyContent="space-between">
                   {blockText.map(block => (
                       <InfoBox
                         title={block.title}
@@ -61,7 +59,7 @@ function App() {
                         index={block.index}
                       />
                   ))}
-              </Flex>
+              </SectionFlex>
           </StyledSection>
       </Page>
     </ThemeProvider>
